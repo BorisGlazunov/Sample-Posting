@@ -1,0 +1,132 @@
+body{
+	background-color:#5F04B4;
+}
+h2{
+	box-shadow: 0 0 10px rgba(155,155,155,0.5);
+	border-radius:7px;
+	color:#8904B1;
+}
+#MainForm{
+	background-color:#4B088A;
+	border:1px solid #4B088A;
+	color:#A9E2F3;
+	width:550px;
+	max-width:550px;
+	height:200px;
+	opacity:0.8;
+	border-radius:15px;
+	margin-top:200px;
+	margin-left:300px;
+	position: absolute;
+	padding:55px;
+}
+#MainForm:hover{
+	background-color:#4B088A;
+	border:1px solid #4B088A;
+	width:550px;
+	max-width:550px;
+	height:200px;
+	opacity:0.9;
+	border-radius:15px;
+	margin-top:200px;
+	margin-left:300px;
+	position: absolute;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#MainForm_username{
+    background-color:#4B088A;
+	border:1px solid #4B088A;
+	width:545px;
+	height:35px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+}
+#MainForm_username:hover{
+    background-color:#5F04B4;
+	border:1px solid #4B088A;
+	width:545px;
+	height:35px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+}
+#MainForm_message{
+    background-color:#4B088A;
+	border:1px solid #4B088A;
+	width:540px;
+	height:75px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	margin-top:35px;
+	position:absolute;
+}
+#MainForm_message:hover{
+    background-color:#5F04B4;
+	border:1px solid #4B088A;
+	width:540px;
+	height:75px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+}
+#MainForm_submit{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:125px;
+	height:45px;
+	opacity:0.7;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:106px;
+	margin-left:70px;
+	transition: all 0.3s;
+	font-size:17px;
+}
+#MainForm_submit:hover{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:125px;
+	height:45px;
+	opacity:0.7;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(180,180,180,0.5);
+	position:absolute;
+	margin-top:106px;
+	margin-left:70px;
+	font-size:18px;
+	color:#9F81F7;
+}
+#MainForm_reset{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:125px;
+	height:45px;
+	opacity:0.7;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:106px;
+	margin-left:350px;
+	transition: all 0.3s;
+	font-size:17px;
+}
+#MainForm_reset:hover{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:125px;
+	height:45px;
+	opacity:0.7;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(180,180,180,0.5);
+	position:absolute;
+	margin-top:106px;
+	margin-left:350px;
+	font-size:18px;
+	color:#9F81F7;
+}
