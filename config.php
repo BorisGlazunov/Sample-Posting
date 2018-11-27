@@ -18,11 +18,11 @@ class Posting{
     		$nick = $_POST["nick"];
     		$msg = $_POST["msg"];
     		if($nick && $msg !== ""){
-    			$sql_db = "SELECT * FROM messages";
-                $result = $this->connect->query($sql_db);
-                    while($row = $result->fetch_object){
-                        print $row;
-                        echo "else";
+                $result = $this->connect->query("SELECT * FROM messages");
+                    var_dump($result);
+                    while($row = $result->fetch_assoc()){
+                        print_r($row);
+
                     }
     		}else{
     			die("Cant write this data to database.");
