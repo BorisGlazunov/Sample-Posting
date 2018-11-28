@@ -19,10 +19,8 @@ class Posting{
     		$msg = $_POST["msg"];
     		if($nick && $msg !== ""){
                 $result = $this->connect->query("SELECT * FROM messages");
-                    var_dump($result);
-                    while($row = $result->fetch_assoc()){
-                        print_r($row);
-
+                    while($output = $result->fetch_assoc() ){
+                    	echo $output['id'], $output['nick'], $output['msg'],"<br>";
                     }
     		}else{
     			die("Cant write this data to database.");
@@ -31,8 +29,7 @@ class Posting{
     }
 }
 
-$objSql = new Posting();
-$objSql->inputData();
+
 
 
 

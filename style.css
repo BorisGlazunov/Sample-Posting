@@ -130,3 +130,33 @@ h2{
 	font-size:18px;
 	color:#9F81F7;
 }
+.MainMenu a{
+	color:#FFFFFF;
+	font-size:14pt;
+	border:1px solid #4B088A;
+	width:240px;
+	height:27px;
+	opacity:0.7;
+	border-radius:10px;
+	transition: all 0.5s;
+	padding:7px;
+}
+.MainMenu:hover a{
+	color:#8904B1;
+	font-size:17pt;
+	border:1px solid #4B088A;
+	width:270px;
+	height:27px;
+	opacity:0.9;
+	border-radius:10px;
+	padding:7px;
+}
+.BaseMenu{
+	border-radius: 10px;
+	border:1px solid #9A2EFE;
+	margin-top:220px;
+	padding:10px;
+	position: absolute;
+	width:260px;
+	height:225px;
+}
