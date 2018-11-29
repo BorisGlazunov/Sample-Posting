@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>SimplePosting</title>
 		<?php
-		include_once("config.php");
+		include_once("configg.php");
 		?>
 		<style>
 		<?php 
@@ -22,22 +22,25 @@
 		</form>
 		<table>
 			<tr>
-				<td><div class="BaseMenu">
-					<pre class="MainMenu"><a href="index.php">Index page</a></pre>
-					<pre class="MainMenu"><a href="">Random Answers</a></pre>
-					<pre class="MainMenu"><a href="">Strip Tags</a></pre>
-					<pre class="MainMenu"><a href="">Database</a></pre>
-					<pre class="MainMenu"><a href="https://ideone.com/myrecent">Ideon</a></pre>
-					<pre class="MainMenu"><a href="https://github.com/BorisGlazunov?tab=repositories">GitHub repositorie</a></pre>
+				<td><div class="BaseMenu" align="center">
+					<pre class="MainMenu"><a href="index.php" style="text-decoration: none;">Index page</a></pre>
+					<pre class="MainMenu"><a href="http://GenerateRandomAnswers/index.php" style="text-decoration: none;">Random Answers</a></pre>
+					<pre class="MainMenu"><a href="http://Striptegs/index.php" style="text-decoration: none;">Strip Tags</a></pre>
+					<pre class="MainMenu"><a href="http://NewDataBase/index.php" style="text-decoration: none;">Database</a></pre>
+					<pre class="MainMenu"><a href="https://ideone.com/myrecent" style="text-decoration: none;">Ideon</a></pre>
+					<pre class="MainMenu"><a href="https://github.com/BorisGlazunov?tab=repositories" style="text-decoration: none;">GitHub repositorie</a></pre>
 					</div>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<?php
-			 		$objSql = new Posting();
-					$objSql->inputData();
-					?>
+					<div class="outputMessages">
+							<?php
+			 				$objSql = new Posting();
+							$objSql->inputData();
+							$objSql->outputData();
+							?>
+					</div>
 				</td>
 			</tr>
 		</table>
