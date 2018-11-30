@@ -49,21 +49,17 @@ class Posting{
                         #COUNTER
                     }
                 }
-            $this->amnt_pages = $id_cnt/9+1;
+            $this->amnt_pages = $id_cnt/9;
                     echo "<form action='' method='post' target='_parent'><select name='id_page'>";
-                for ($cnt=1; $cnt<=$this->amnt_pages; $cnt++) {
+                for ($cnt=0; $cnt<=$this->amnt_pages; $cnt++) {
                     echo "<option value=".$cnt.">$cnt</option>";
                 }
                     echo "</select><input type='submit' name='change_page'></form>";
                         $change_page = $_POST["change_page"];
                         $id_page = $_POST["id_page"];
-                        $mess_since = $id_page*9-9;
-                        $mess_to = $mess_since+9;
-                            if (!$change_page) {
-                                $query = "SELECT id, nickname, msg FROM messages WHERE id BETWEEN 1 AND 9";
-                            }else {
-                                $query = "SELECT id, nickname, msg FROM messages WHERE id BETWEEN $mess_since AND $mess_to";
-                            }
+                        $mess_to = $mess_since-9;
+                        $mess_since = $id_page*9;
+                            $query = "SELECT id, nickname, msg FROM messages ORDER BY id DESC LIMIT $mess_since, 9";
                                     if ($stmt = $this->connect_db->prepare($query)) {
                                          $stmt->execute();
                                     }
@@ -71,8 +67,7 @@ class Posting{
                                         while ($stmt->fetch()) {
                                             printf("<br> %i %s %s\n", $id_out, $nick_out, $msg_out);
                                         }
-
-                            $stmt->close();
+                                        $stmt->close();
     }
 
     public function __destruct () {
