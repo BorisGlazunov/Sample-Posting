@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>SimplePosting</title>
 		<?php
-		include_once("configg.php");
+		include_once("config.php");
 		?>
 		<style>
 		<?php 
