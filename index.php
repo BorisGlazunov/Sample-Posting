@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>SimplePosting</title>
 		<?php
 		include_once("config.php");
@@ -35,11 +36,11 @@
 			<tr>
 				<td>
 					<div class="outputMessages">
-							<?php
-			 				$objSql = new Posting();
-							$objSql->inputData();
-							$objSql->outputData();
-							?>
+						<?php
+			 			$objSql = new Posting();
+						$objSql->inputData();
+						$objSql->outputData();
+						?>
 					</div>
 				</td>
 			</tr>

@@ -50,11 +50,11 @@ class Posting{
                     }
                 }
             $this->amnt_pages = $id_cnt/9;
-                    echo "<form action='' method='post' target='_parent'><select name='id_page'>";
+                    echo "<form action='' method='post' target='_parent' class='SelectDecoration'><select name='id_page'>";
                 for ($cnt=0; $cnt<=$this->amnt_pages; $cnt++) {
                     echo "<option value=".$cnt.">$cnt</option>";
                 }
-                    echo "</select><input type='submit' name='change_page'></form>";
+                    echo "</select><input type='submit' name='change_page' class='PageButtonDecoration' value='Chose the page'></form>";
                         $change_page = $_POST["change_page"];
                         $id_page = $_POST["id_page"];
                         $mess_to = $mess_since-9;
@@ -65,7 +65,7 @@ class Posting{
                                     }
                                     $stmt->bind_result($id_out, $nick_out, $msg_out);
                                         while ($stmt->fetch()) {
-                                            printf("<br> %i %s %s\n", $id_out, $nick_out, $msg_out);
+                                            printf("<hr>%i %s %s\n", $id_out, "<button class='NickDecoration'>".$nick_out."</button>", "<button class='TextMessageDecoration'>".$msg_out."</button>");
                                         }
                                         $stmt->close();
     }
