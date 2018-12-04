@@ -7,13 +7,14 @@ h2{
 	color:#8904B1;
 }
 hr{
-border: 0;
-height: 1px;
-background:#8904B1;
-background-image: -webkit-linear-gradient(left, #8904B1, #000, #8904B1);
-background-image: -moz-linear-gradient(left, #8904B1, #000, #8904B1);
-background-image: -ms-linear-gradient(left, #8904B1, #000, #8904B1);
-background-image: -o-linear-gradient(left, #8904B1, #000, #8904B1);
+	opacity:0.4;
+	border: 0;
+	height: 1px;
+	background:#8904B1;
+	background-image: -webkit-linear-gradient(left, #8904B1, #000, #8904B1);
+	background-image: -moz-linear-gradient(left, #8904B1, #000, #8904B1);
+	background-image: -ms-linear-gradient(left, #8904B1, #000, #8904B1);
+	background-image: -o-linear-gradient(left, #8904B1, #000, #8904B1);
 }
 select{
     position:absolute;
@@ -41,7 +42,7 @@ select{
 	height:200px;
 	opacity:0.8;
 	border-radius:15px;
-	margin-top:200px;
+	margin-top:25px;
 	margin-left:300px;
 	position: absolute;
 	padding:55px;
@@ -54,7 +55,7 @@ select{
 	height:200px;
 	opacity:0.9;
 	border-radius:15px;
-	margin-top:200px;
+	margin-top:25px;
 	margin-left:300px;
 	position: absolute;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -182,7 +183,7 @@ select{
 .BaseMenu{
 	border-radius: 10px;
 	border:1px solid #9A2EFE;
-	margin-top:230px;
+	margin-top:55px;
 	margin-left:25px;
 	padding:10px;
 	position:absolute;
@@ -195,19 +196,32 @@ select{
 	font-family:Monaco, Georgia;
 	width:900px;
 	height:430px;
-	border:1px solid #9A2EFE;
+	border:1px solid #4B088A;
 	border-radius:10px;
 	padding:10px;
-	margin-top:530px;
+	margin-top:370px;
 	margin-left:125px;
 	position: absolute;
+	box-shadow: 0 0 25px rgba(0,0,0,0.9);
 }
 .NickDecoration{
 	color:#D0A9F5;
-	font-style:bold;
 	width:90px;
 	height:23px;
 	background:transparent;
+	border:1px solid #4B088A;
+	opacity:0.7;
+	border-radius:5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: all 0.3s;
+	font-size:15px;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
+}
+.JaredNickDecoration{
+	color:#D0A9F5;
+	width:90px;
+	height:23px;
+	background:#6A0888;
 	border:1px solid #4B088A;
 	opacity:0.7;
 	border-radius:5px;
@@ -257,9 +271,57 @@ select{
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	transition: all 0.3s;
 	font-size:15px;
+	opacity:0.7;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
+	transition: all 0.3s;
+	border:1px solid #4B088A;
+	transition: all 0.5s;
+}
+.TextMessageDecoration:hover{
+	color:#D0A9F5;
+	max-width:890px;
+	height:25px;
+	background:transparent;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9);
+	transition: all 0.3s;
+	font-size:15px;
 	opacity:0.8;
 	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
 	transition: all 0.3s;
 	border:1px solid #4B088A;
 	transition: all 0.5s;
+}
+.JaredTextDecoration{
+	color:#D0A9F5;
+	max-width:890px;
+	height:25px;
+	background:#6A0888;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: all 0.3s;
+	font-size:15px;
+	opacity:0.8;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.6);
+	transition: all 0.3s;
+	border:1px solid #4B088A;
+	transition: all 0.5s;
+}
+.JaredTextDecoration:hover{
+	color:#D0A9F5;
+	max-width:890px;
+	height:25px;
+	background:#6A0888;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+	transition: all 0.3s;
+	font-size:15px;
+	opacity:0.8;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
+	transition: all 0.3s;
+	border:1px solid #4B088A;
+	transition: all 0.5s;
+}
+.SelectDecoration{
+    margin-top:10px;
 }
