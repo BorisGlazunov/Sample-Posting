@@ -39,6 +39,7 @@
 						<?php
 			 			$objSql = new Posting();
 						$objSql->inputData();
+						$objSql->outputPagination();
 						$objSql->outputData();
 						?>
 					</div>
