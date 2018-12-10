@@ -1,3 +1,7 @@
+<?php
+	$postingModel = new Posting ("localhost", "Jared", "291996", "hidden_post");
+	$postingModel->inputData ();
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 	<head>
@@ -37,10 +41,8 @@
 				<td>
 					<div class="outputMessages">
 						<?php
-			 			$objSql = new Posting("localhost", "Jared", "291996", "hidden_post");
-						$objSql->inputData();
-						print $objSql->outputPagination();
-						$objSql->outputData();
+						print $postingModel->outputPagination ();
+						$postingModel->outputData ();
 						?>
 					</div>
 				</td>

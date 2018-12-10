@@ -8,6 +8,7 @@ declare (strict_types=1);
  * @autor ...
  */
 class Posting {
+    
     /** @var string */
     private $host = "";
     /** @var string */
@@ -16,6 +17,7 @@ class Posting {
     private $pass = "";
     /** @var string */
     private $database = "";
+
     /** @var mysqli */
     protected $connect_db;
     /** @var int|null */
@@ -124,10 +126,10 @@ class Posting {
 
     public function __destruct () {
         if ($this->connect_db) {
-            $this->connect_db->close();
+            $this->connect_db->close ();
         }
-        if ($this->connect_db == true) {
-            exit();
+        if ($this->connect_db) {
+            exit ();
         }
     }
 }
