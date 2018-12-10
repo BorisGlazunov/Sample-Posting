@@ -37,9 +37,9 @@
 				<td>
 					<div class="outputMessages">
 						<?php
-			 			$objSql = new Posting();
+			 			$objSql = new Posting("localhost", "Jared", "291996", "hidden_post");
 						$objSql->inputData();
-						$objSql->outputPagination();
+						print $objSql->outputPagination();
 						$objSql->outputData();
 						?>
 					</div>
