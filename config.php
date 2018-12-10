@@ -26,7 +26,7 @@ class Posting {
         }
     }
 
-    public function inputData () {
+    public function inputData (): void {
         if ($_POST["add"]) {
             if ($_POST["nick"] && $_POST["msg"] !== "") {
                 $query = "INSERT INTO messages (id, nickname, msg) VALUES (?,?,?)";
@@ -44,7 +44,7 @@ class Posting {
         }
     }
 
-    public function outputPagination () {
+    public function outputPagination (): void {
         # query запрос
         #$query = "SELECT id, nickname, msg FROM messages";
         #
@@ -70,12 +70,12 @@ class Posting {
                     echo "</select><input type='submit' name='change_page' class='PageButtonDecoration' value='Chose the page'></form>";
     }
 
-    public function outputData () {
+    public function outputData (): void {
         if (isset($change_page)) { 
             $change_page = $_POST["change_page"];
         }
         if (isset($_POST["id_page"])) {
-            $id_page = $_POST["id_page"];
+            $id_page = (int) $_POST["id_page"];
             $mess_since = $id_page*9;
             $mess_to = $mess_since-9;
         }else{
