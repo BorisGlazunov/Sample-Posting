@@ -33,12 +33,11 @@ select{
 *{
   outline: 0 !important;
 }
-#MainForm{
+.MainForm{
 	background-color:#4B088A;
 	border:1px solid #4B088A;
 	color:#A9E2F3;
 	width:550px;
-	max-width:550px;
 	height:200px;
 	opacity:0.8;
 	border-radius:15px;
@@ -47,11 +46,10 @@ select{
 	position: absolute;
 	padding:55px;
 }
-#MainForm:hover{
+.MainForm:hover{
 	background-color:#4B088A;
 	border:1px solid #4B088A;
 	width:550px;
-	max-width:550px;
 	height:200px;
 	opacity:0.9;
 	border-radius:15px;
@@ -79,6 +77,28 @@ select{
 	border-radius:10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	position:absolute;
+}
+#MainForm_username_pass{
+    background-color:#4B088A;
+	border:1px solid #4B088A;
+	width:545px;
+	height:35px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:55px;
+}
+#MainForm_username_pass:hover{
+    background-color:#5F04B4;
+	border:1px solid #4B088A;
+	width:545px;
+	height:35px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:55px;
 }
 #MainForm_message{
     background-color:#4B088A;
@@ -156,6 +176,95 @@ select{
 	margin-left:350px;
 	font-size:18px;
 	color:#9F81F7;
+}
+#DropProfile{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:100px;
+	height:25px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:-145px;
+	margin-left:0px;
+	transition: all 0.3s;
+	font-size:17px;
+}
+#DropProfile:hover{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:115px;
+	height:30px;
+	opacity:0.9;
+	border-radius:10px;
+	box-shadow: 0 0 15px rgba(180,180,180,0.5);
+	position:absolute;
+	margin-top:-145px;
+	margin-left:0px;
+	font-size:18px;
+	color:#9F81F7;
+}
+#logOutProfile{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:100px;
+	height:25px;
+	opacity:0.8;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	position:absolute;
+	margin-top:-145px;
+	margin-left:115px;
+	transition: all 0.3s;
+	font-size:17px;
+}
+#logOutProfile:hover{
+	background-color:#8904B1;
+	border:1px solid #4B088A;
+	width:115px;
+	height:30px;
+	opacity:0.9;
+	border-radius:10px;
+	box-shadow: 0 0 15px rgba(180,180,180,0.5);
+	position:absolute;
+	margin-top:-145px;
+	margin-left:120px;
+	font-size:18px;
+	color:#9F81F7;
+}
+.X_button{
+	color:#D0A9F5;
+	font-style:bold;
+	max-width:890px;
+	height:25px;
+	background:transparent;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	transition: all 0.3s;
+	font-size:15px;
+	opacity:0.7;
+	margin-left: 5px;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
+	transition: all 0.3s;
+	border:1px solid #4B088A;
+	transition: all 0.5s;
+}
+.X_button:hover{
+	color:#D0A9F5;
+	max-width:890px;
+	height:25px;
+	background:transparent;
+	border-radius:10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.9);
+	transition: all 0.3s;
+	font-size:15px;
+	opacity:0.8;
+	margin-left: 5px;
+	text-shadow: 2px 2px 3px rgba(125,175,225,0.8);
+	transition: all 0.3s;
+	border:1px solid #4B088A;
+	transition: all 0.5s;
 }
 .MainMenu a{
 	color:#FFFFFF;
@@ -321,4 +430,17 @@ select{
 	transition: all 0.3s;
 	border:1px solid #4B088A;
 	transition: all 0.5s;
+}
+.LogForm{
+	background-color:#4B088A;
+	border:1px solid #4B088A;
+	color:#A9E2F3;
+	width:550px;
+	height:200px;
+	opacity:0.8;
+	border-radius:15px;
+	margin-top:25px;
+	margin-left:300px;
+	position: absolute;
+	padding:55px;
 }
